@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".InputActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgCam"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cBola"
+            app:srcCompat="@drawable/ic_camera" />
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_rectangle"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="DAFTAR"
+            android:textColor="@color/white"
+            app:backgroundTint="@drawable/selected_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgCam" />
+
+        <Button
+            android:id="@+id/btnHapus"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_rectangle"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="HAPUS"
+            android:textColor="@color/white"
+            app:backgroundTint="@drawable/selected_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDaftar" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_rectangle"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="EDIT"
+            android:textColor="@color/white"
+            app:backgroundTint="@drawable/selected_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDaftar" />
+
+        <Button
+            android:id="@+id/btnCam"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_rectangle"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Camera"
+            android:textColor="@color/white"
+            app:backgroundTint="@drawable/selected_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cBola" />
+
+        <Button
+            android:id="@+id/btnGalery"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_rectangle"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Galeri"
+            android:textColor="@color/white"
+            app:backgroundTint="@drawable/selected_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCam" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/button_rectangle"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="CEK DATA"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/abu_abu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HeaderText" />
+
+        <TextView
+            android:id="@+id/HeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Form Registrasi"
+            android:textColor="@color/black_custom"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtNIM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginRight="150dp"
+            android:backgroundTint="@color/abu_abu"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="NIM"
+            android:inputType="textPersonName"
+            android:textColor="@color/abu_abu"
+            android:textColorHint="@color/abu_abu"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HeaderText" />
+
+        <EditText
+            android:id="@+id/txtNama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/abu_abu"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Nama Lengkap"
+            android:inputType="textPersonName"
+            android:textColor="@color/abu_abu"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/abu_abu"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNIM" />
+
+        <EditText
+            android:id="@+id/txtAlamat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/abu_abu"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Alamat"
+            android:inputType="textPersonName"
+            android:textColor="@color/abu_abu"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/abu_abu"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNama" />
+
+        <EditText
+            android:id="@+id/txtTelepon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/abu_abu"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Telepon"
+            android:inputType="textPersonName"
+            android:textColor="@color/abu_abu"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/abu_abu"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAlamat" />
+
+        <EditText
+            android:id="@+id/txtTptLahir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="@color/abu_abu"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Tempat Lahir"
+            android:inputType="textPersonName"
+            android:textColor="@color/abu_abu"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/abu_abu"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioJK" />
+
+        <RadioGroup
+            android:id="@+id/radioJK"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/txtTelepon">
+
+            <RadioButton
+                android:id="@+id/lakiLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10pt"
+                android:fontFamily="@font/poppins"
+                android:text="Laki-Laki"
+                android:textColor="@color/abu_abu"
+                android:buttonTint="@color/abu_abu"
+                android:layout_marginStart="10pt" />
+
+            <RadioButton
+                android:id="@+id/perempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6pt"
+                android:fontFamily="@font/poppins"
+                android:text="Perempuan"
+                android:textColor="@color/abu_abu"
+                android:buttonTint="@color/abu_abu"
+                android:layout_marginStart="6pt" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Jenis Kelamin :"
+            android:textColor="@color/abu_abu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTelepon" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/poppins"
+            android:text="Hobby :"
+            android:textColor="@color/abu_abu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTglLahir" />
+
+        <EditText
+            android:id="@+id/txtTglLahir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins"
+            android:hint="Tanggal Lahir"
+            android:backgroundTint="@color/abu_abu"
+            android:inputType="date"
+            android:textColor="@color/abu_abu"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/abu_abu"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTptLahir" />
+
+        <CheckBox
+            android:id="@+id/cMembaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Membaca"
+            android:textColor="@color/abu_abu"
+            android:buttonTint="@color/abu_abu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <CheckBox
+            android:id="@+id/cKumpul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Berkumpul Dengan Teman"
+            android:textColor="@color/abu_abu"
+            android:buttonTint="@color/abu_abu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cMembaca"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <CheckBox
+            android:id="@+id/cMendaki"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Mendaki Gunung"
+            android:textColor="@color/abu_abu"
+            android:buttonTint="@color/abu_abu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.011"
+            app:layout_constraintStart_toEndOf="@+id/cGames"
+            app:layout_constraintTop_toBottomOf="@+id/cKumpul" />
+
+        <CheckBox
+            android:id="@+id/cBola"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="47dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Sepak Bola"
+            android:textColor="@color/abu_abu"
+            android:buttonTint="@color/abu_abu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cSepeda"
+            app:layout_constraintTop_toBottomOf="@+id/cMendaki" />
+
+        <CheckBox
+            android:id="@+id/cGames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Main Games"
+            android:textColor="@color/abu_abu"
+            android:buttonTint="@color/abu_abu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cMembaca" />
+
+        <CheckBox
+            android:id="@+id/cSepeda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Bersepeda"
+            android:textColor="@color/abu_abu"
+            android:buttonTint="@color/abu_abu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cGames" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
